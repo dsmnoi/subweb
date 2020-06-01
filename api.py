@@ -276,7 +276,10 @@ def lists():
                         emoji = 'false'
                     fdn = request.form.get('fdn')
                     if fdn == None:
-                        fdn= 'false'                    
+                        fdn= 'false'
+                    new_name = request.form.get('new_name')
+                    if new_name == None:
+                        new_name= 'false' 
                 except :
                     return '出现BUG，请反馈'
                 yourcustom = '包含的节点:'+custom+'           去掉的节点:'+excustom  
